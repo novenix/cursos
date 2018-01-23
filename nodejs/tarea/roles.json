@@ -1,0 +1,14 @@
+{
+    "permisos":[
+        {"id":2,
+        "nombre":"administrador"
+        },
+
+        {"id":3,
+        "nombre":"operador"
+        },
+        {"id":1,
+        "nombre":"logistica"
+}
+    ]
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>setInterval</title>
+</head>
+<body>
+    <button id="cancel-inter">cancel</button>
+    <H1 id="timer">han pasado 0 segundos</H1>
+    <script>
+        // set interval ejecuta una funcion cada determinado tiempo
+        //cada cierto tiempo ejecuta cierto tiempo
+        //como un contador, o cualquier algoritmo
+        // (parametro,cada cuanto tiempo ejecuta)
+
+        const timer= document.getElementById('timer');
+        const $cancelbutton= document.getElementById("cancel-inter")
+        let cont=0;
+        let t=setInterval(()=>{
+          
+            cont++;
+            let segs;
+            let mes= (cont===1)?segs="segundo":segs="segundos"
+            timer.textContent = `ha pasado ${cont} ${segs} `
+            //console.log(`ha pasado 1 segundos `)
+        },1000)
+        $cancelbutton.addEventListener("click",()=>{
+            clearInterval(t);
+        })
+        
+
+    </script>
+</body>
+</html>

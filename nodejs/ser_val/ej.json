@@ -1,0 +1,144 @@
+{
+    "Estados": [
+        {
+            "_id": "5a467a22224052d406b507ae",
+            "nombre": "Orden De Servicio Creada",
+            "ProcesoSistema": 1
+        },
+        {
+            "_id": "5a467a7f224052d406b507af",
+            "nombre": "Orden De Servicio Asignada",
+            "ProcesoSistema": 3
+        },
+        {
+            "_id": "5a467a9d224052d406b507b0",
+            "nombre": "orden de servicio cancelada",
+            "ProcesoSistema": 2
+        },
+        {
+            "_id": "5a467ace224052d406b507b1",
+            "nombre": "Orden de servicio cerrada",
+            "ProcesoSistema": 4
+        },
+        {
+            "_id": "5a4c0c032eac8f6b6fda7e98",
+            "nombre": "Orden De Servicio Recogida",
+            "ProcesoSistema": 5
+        }
+    ],
+    "Procesos": [
+        {
+            "id_OperadorLogistico": "5a2052ea6535d593c73c815c",
+            "Procesos": [
+                {
+                    "_id": "5a467412224052d406b507a4",
+                    "id_OperadorLogistico": "5a2052ea6535d593c73c815c",
+                    "nombre": "generado en cliente",
+                    "EsCierre": false,
+                    "TieneConcepto": false,
+                    "GeneraManifiesto": false,
+                    "ProcesoSistema": 1,
+                    "atencion_courier": false,
+                    "EsCierreManifiesto": false
+                },
+                {
+                    "_id": "5a4674a7224052d406b507a6",
+                    "id_OperadorLogistico": "5a2052ea6535d593c73c815c",
+                    "nombre": "entregado a destinatario",
+                    "EsCierre": true,
+                    "TieneConcepto": false,
+                    "GeneraManifiesto": false,
+                    "ProcesoSistema": 6,
+                    "atencion_courier": false,
+                    "EsCierreManifiesto": true
+                },
+                {
+                    "_id": "5a4674d3224052d406b507a7",
+                    "id_OperadorLogistico": "5a2052ea6535d593c73c815c",
+                    "nombre": "devuelto",
+                    "EsCierre": false,
+                    "TieneConcepto": true,
+                    "GeneraManifiesto": false,
+                    "ProcesoSistema": 7,
+                    "atencion_courier": false,
+                    "EsCierreManifiesto": false
+                },
+                {
+                    "_id": "5a46750f224052d406b507a8",
+                    "id_OperadorLogistico": "5a2052ea6535d593c73c815c",
+                    "nombre": "entregado a remitente",
+                    "EsCierre": true,
+                    "TieneConcepto": false,
+                    "GeneraManifiesto": false,
+                    "ProcesoSistema": 8,
+                    "atencion_courier": false,
+                    "EsCierreManifiesto": true
+                },
+                {
+                    "_id": "5a46757e224052d406b507a9",
+                    "id_OperadorLogistico": "5a2052ea6535d593c73c815c",
+                    "nombre": "entrada a centro logistico",
+                    "EsCierre": false,
+                    "TieneConcepto": false,
+                    "GeneraManifiesto": true,
+                    "ProcesoSistema": 0,
+                    "atencion_courier": false,
+                    "EsCierreManifiesto": true
+                },
+                {
+                    "_id": "5a467605224052d406b507aa",
+                    "id_OperadorLogistico": "5a2052ea6535d593c73c815c",
+                    "nombre": "en zona de distribucion",
+                    "EsCierre": false,
+                    "TieneConcepto": false,
+                    "GeneraManifiesto": false,
+                    "ProcesoSistema": 5,
+                    "atencion_courier": true,
+                    "EsCierreManifiesto": false
+                },
+                {
+                    "_id": "5a467665224052d406b507ab",
+                    "id_OperadorLogistico": "5a2052ea6535d593c73c815c",
+                    "nombre": "siniestrado",
+                    "EsCierre": true,
+                    "TieneConcepto": true,
+                    "GeneraManifiesto": false,
+                    "ProcesoSistema": 0
+                },
+                {
+                    "_id": "5a467688224052d406b507ac",
+                    "id_OperadorLogistico": "5a2052ea6535d593c73c815c",
+                    "nombre": "salida ciudad destino",
+                    "EsCierre": false,
+                    "TieneConcepto": false,
+                    "GeneraManifiesto": true,
+                    "ProcesoSistema": 0,
+                    "atencion_courier": true,
+                    "EsCierreManifiesto": false
+                },
+                {
+                    "_id": "5a4676a5224052d406b507ad",
+                    "id_OperadorLogistico": "5a2052ea6535d593c73c815c",
+                    "nombre": "no recogido",
+                    "EsCierre": true,
+                    "TieneConcepto": true,
+                    "GeneraManifiesto": false,
+                    "ProcesoSistema": 10,
+                    "atencion_courier": false,
+                    "EsCierreManifiesto": true
+                },
+                {
+                    "_id": "5a5631d5ec2ef666fa050b9a",
+                    "id_OperadorLogistico": "5a2052ea6535d593c73c815c",
+                    "nombre": "Atencion Courier",
+                    "EsCierre": true,
+                    "TieneConcepto": true,
+                    "GeneraManifiesto": false,
+                    "ProcesoSistema": 11,
+                    "atencion_courier": false,
+                    "EsCierreManifiesto": false
+                }
+            ]
+        }
+    ]
+}

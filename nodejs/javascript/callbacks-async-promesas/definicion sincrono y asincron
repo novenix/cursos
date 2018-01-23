@@ -1,0 +1,11 @@
+definicion de callback:cuando pasas una funcion a otra funcion como
+argumento para que se ejecute
+se ejecuta de forma :
+    sincrona: cuando hace paso a paso, hasta que no termina algo
+        no pasa a lo siguiente
+    asincrono: el timeout, ejecuta la referencia html
+                                    timeout 
+                                    CONSOLE
+    cuando no ocurre de manera inmediata,pero si espera que se ejecute
+    asincrinia y callbacks; pedir data de cierto tipo,
+     

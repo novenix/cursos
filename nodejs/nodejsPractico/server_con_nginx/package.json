@@ -1,0 +1,16 @@
+{
+  "name": "nodejspractico",
+  "version": "1.0.0",
+  "description": "curso practiod node js video 2 brain",
+  "main": "index.js",
+  "scripts": {
+    "start2": "nodemon index2.js",
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nicolas Torres",
+  "license": "MIT",
+  "dependencies": {
+    "nodemon": "^1.14.11"
+  }
+}

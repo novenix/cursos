@@ -1,0 +1,66 @@
+standar en que se basa javascript
+babel: permite tener codigo compatible con versiones
+antiguas de navegadores,
+///modulos, encapsulamiento
+//sincrono, el modulo tiene que cargar para poder utilizarlo
+common.js: usar modulos, exportarlos y mandarlos a otro lado
+para que no quede todo el codigo en un solo lado, se importa lo que se requiere
+son modulos sincronos, sintaxis linda
+    ej:
+        //triangle.js
+         module.exports =function (base=0,heigth=0){
+            retrun base*heigth/2
+        }
+        //otroarchivo,js
+        const triangle = require ('./triangle,js')
+
+        const base=5
+        const height=7
+        console.log('el area de un triangle es${triangle.area(base,height)} ')
+
+AMD:permite escribir modulos asincronos, sintaxis no tan linda
+
+
+    ej: //triangle.js
+        define('triangle,function(){{
+            return function(base=0,heigth=0){
+                retrun base*heigth/2
+            }
+        })
+        //otroarchivo.js
+            require('./triangle.js',function(triangle){
+            const base=5
+            const heigth=7 console.log( ${triangle(base,heigth)} )
+        })
+
+MODULOS ES 2015(ECMASCRIPT 2015);
+        //square.js
+        import triangle from 'triangle'
+
+        export function area(x){
+            retrun x*x
+        }
+
+        export function perimeter(x){
+            retrun 3*x
+        }
+
+        export function diagonal(x){
+            return triangle.hipotenuse(x,x)
+        }
+
+        //otro archivo
+        import square from 'square'
+        const side=7
+        console.log(la diagonal del cuadrado es ${square.diagonal(side)} )
+
+    permite importar modulos asincronamente de esta manera
+        con promesas
+        System.import('triangle)
+            .then(triangle =>{//....}
+            .catch(error=>{/...}))
+
+SYSTEM.JS: de angular, es universal , permite tener modulos de amd o ecma , sincronos y asincronos
+la sintaxis no es muy amigable, para usar en el navegador se tiene que requerir 
+un archivo .
+//....

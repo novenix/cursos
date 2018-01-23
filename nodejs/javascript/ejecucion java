@@ -1,0 +1,32 @@
+javascript ejecuta por medio de un call stack
+y es una pila
+//eventloop es cuello de botella
+    no trabar la pila con tareas muy extesas
+
+    funcion time out, que pase cierto tiempo para
+    ejecutar una tarea con:
+        setTimeout(fucntion(){},1000)
+        se pone lo que se quiera ejecutar
+        y se pone el tiempo
+
+        1. ejecuta los 1000 milisegundos
+        2. ejecuta la funcion a correr
+        lo que sucede es que el primer set se carga en 
+        otro porceso, una web api
+
+            ///en otro codigo
+            web api
+            setTimeout(fun(),1000)
+            al cabo de 1000 milisegundos , por medio de una 
+            cola de tareas(task queue)
+            ///ejemplo:
+
+            console.log('holo')
+            setTimeout(function(){console.log('medio')},0)
+            console.log('chau')
+            ///rta:
+                    holo    
+                    chao
+                    medio
+            manejar los callbacks con async await, promesas etc, es ser buen programador
+            

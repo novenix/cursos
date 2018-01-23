@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="agenda">estoy despertando</h1>
+    <script>
+        ///itinerario del dia.
+        //se pone en mayuscula cuando 
+        //el valor va a ser constante
+        ///TAMBIEN ES UN EJEMPLO DEL CALBACK HELL
+        //UN CALLBACK DENTRO DE OTRO
+        const DESPERTAR=3000;
+        const ARREGLARME=2000;
+        const TRANSPORTE=2000;
+        const TRABAJAR=3000;
+        
+        const CURSOS=3000;
+        const COMER=2000;
+        const DORMIR=2000;
+        const $agenda = document.getElementById("agenda");
+
+        setTimeout(()=>{
+            //cambiar el valor de agenda
+            $agenda.textContent='ahora me estoy arreglando...'
+            setTimeout(()=>{
+                $agenda.textContent="ahora esoy en el transmilenio"
+                setTimeout(()=>{
+                    $agenda.textContent="ahora estoy trabajando..."
+                    setTimeout(()=>{
+                        $agenda.textContent="ahora estoy haciendo cursos..."
+                        setTimeout(()=>{
+                        $agenda.textContent="ahora estoycomendo ñam ñam..."
+                        },COMER)
+                    },CURSOS)
+                } ,TRABAJAR)
+            },ARREGLARME)
+        },DESPERTAR)
+        
+    </script>
+</body>
+</html>

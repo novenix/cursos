@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Timeout</title>
+</head>
+<body>
+    <button id="cancel-but">cancel</button>
+    <script>
+        // setTimeout(()=>{
+        //     console.log('han pasado 5 segs')
+        // },5000)
+        // setTimeout(()=>{
+        //     document.write('han pasado 5 segundos')
+            
+        // },5000)
+        const $cancelButton=document.getElementById("cancel-but")
+       const t = setTimeout(()=>{
+            alert('han pasado 5 segs')
+        },5000)
+        //para parar un timeout en un boton
+        $cancelButton.addEventListener('click',()=>{
+            clearTimeout(t)
+        })
+        
+    </script>
+</body>
+</html>
